@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navabr styling */
+.nav-imgs {
+  width: 80%;
+}
+.nav {
+  height: 10vh;
+}
+.home {
+  color: #39DB4A;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  height: 6vh;
+  padding: 0.3rem;
+}
+.logo div{
+  height: 100%;
+}
+.logo img {
+  height: 70%;
+}
+.f-icon {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  background-color: #39DB4A;
+  border-radius: 5px;
+  margin-right: 0.3rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.f-icon img {
+  height: 3.5vh;
+}
+
+/* Button Styling  */
+
+.cus-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  color: white;
+  background-color: #39DB4A;
+  border: none;
+  border-radius: 3rem;
+  padding: 0.6rem 1.1rem;
+  box-shadow: -1px 3px 10px #39DB4A;
+}
+.cus-btn img {
+  width: 1vw;
+}
+.herosec-btn {
+  background-color: white;
+  color: #4D4D4D;
+  text-align: center;
+  border: none;
+  border-radius: 3rem;
+  padding: 0.6rem 1.1rem;
+  font-weight: 500;
+}
+
+/* Hero Secrtion styling */
+
+.row {
+  padding-bottom: 10vh;
+}
+.row .left {
+  padding: 4rem;
+  padding-left: 8.5rem;  
+}
+.row .left h1 {
+  font-size: 3.8rem;
+  font-family: "Inter", serif;
+  font-weight: 800;
+  line-height: 5.75rem;
+}
+.row .left h1 .Food {
+  color: #39DB4A;
+}
+.row .left p {
+  color: #4A4A4A;
+  font-size: 1.6rem;
+  line-height: 2.75rem;
+}
+.btns-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.row .right .girl-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #39DB4A;
+  width: 33vw;  /* 10% of the viewport width */
+  height: 33vw; /* Equal height to maintain the circle shape */
+  border-radius: 50%;
+  position: relative;
+  top: 5vh;
+}
+.girl {
+  width: 90%;
+  position: relative;
+  right: 15px;
+  top: 12px;
+}
+.play-btn {
+  background-color:  white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  box-shadow: -1px 3px 20px rgb(181, 180, 180);
+}
+.play-btn img {
+  width: 1vw;
+}
+@media only screen and (max-width: 500px) {
+  /* Navbar in the dropdown */
+  #responsive-navbar-nav {
+    background-color: white;
+    gap: 1rem;
+    border-radius: 1rem;
+  }
+  .Responsive-nav-btn {
+    display: none;
+  }
+  .nav-imgs {
+   display: none;
+  }
+  /* Navbar */
+  
+  .f-icon img {
+    height: 3vh;
+  }
+  /* Hero-Section */
+  .row .left {
+    padding: 1.5rem;
+    padding-left: 3rem;  
+  }
+  .row .left h1 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+  }
+  .row .left p {
+    color: #4A4A4A;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  /* Custom Button Styling */
+  .btns-div {
+    gap: 0.2rem;
+  }
+  .cus-btn {
+    gap: 0.4rem;
+    font-size: 0.6rem;
+    justify-content: space-between;
+    border-radius: 2rem;
+    padding: 0.2rem 1.5rem;
+    box-shadow: -1px 3px 10px #39DB4A;
+  }
+  .cus-btn img {
+    width: 2.8vw;
+  }
+  .herosec-btn {
+    font-size: 0.6rem;
+    border-radius: 2rem;
+    padding: 0.2rem 1rem;;
+  }
+  .play-btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: -1px 3px 10px rgb(181, 180, 180);
+  }
+  .play-btn img {
+    width: 2.5vw;
+  }
+  .row .right .girl-div {
+    width: 70vw;  /* 10% of the viewport width */
+    height: 70vw; /* Equal height to maintain the circle shape */
+    border-radius: 50%;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  /* Navbar in the dropdown */
+  #responsive-navbar-nav {
+    background-color: white;
+    gap: 1rem;
+    border-radius: 1rem;
+  }
+  .Responsive-nav-btn {
+    display: none;
+  }
+  .nav-imgs {
+   display: none;
+  }
+  .logo {
+    height: 5vh;
+  }
+  /* Navbar */
+  /* Hero-section */
+  .row .left {
+    padding: 1rem;
+    padding-left: 4rem;  
+    width: 90%;
+    margin: auto;
+  }
+  .row .left h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .row .left p {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+  /* Custom Button Styling */
+  .cus-btn {
+    box-shadow: 1px 3px 10px #39DB4A;
+  }
+  .cus-btn img {
+    width: 3vw;
+  }
+  .play-btn img {
+    width: 2.5vw;
+  }
+  .row .right .girl-div {
+    width: 70vw;  /* 10% of the viewport width */
+    height: 70vw; /* Equal height to maintain the circle shape */
+    border-radius: 50%;
+  }
+} 
+@media only screen and (min-width: 768px) and (max-width:991px) {
+  #responsive-navbar-nav {
+    background-color: white;
+    gap: 1rem;
+    border-radius: 1rem;
+  }
+  .Responsive-nav-btn {
+    display: none;
+  }
+  .nav-imgs {
+   display: none;
+  }
+    /* Navbar */
+  /* Hero-section */
+  .row .left {
+    padding: 1rem;
+    /* padding-left: 6rem; */
+    width: 80%;
+    margin: auto;
+  }
+  .row .left h1 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+  .row .left p {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+   /* Custom Button Styling */
+   .cus-btn {
+    box-shadow: 1px 3px 10px #39DB4A;
+  }
+  .cus-btn img {
+    width: 3vw;
+  }
+  .play-btn img {
+    width: 2.5vw;
+  }
+  .row .right .girl-div {
+    width: 70vw;  /* 10% of the viewport width */
+    height: 70vw; /* Equal height to maintain the circle shape */
+    border-radius: 50%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+  .row .left {
+    padding: 3rem;
+  }
+  .row .left h1 {
+
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .row .left p {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width:1351px){
+  .row .right .girl-div {
+    width: 40vw;  /* 10% of the viewport width */
+    height: 40vw; /* Equal height to maintain the circle shape */
+    border-radius: 50%;
+  }
+  .row .left {
+    padding: 4rem;
+    padding-left: 4rem;  
+  }
+}
+/* Second Section Styling */
+.SecondSec-Div {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.SecondSec-Div h6 {
+  color: #FF6868;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.SecondSec-Div h3 {
+  font-size: 3.7rem;
+  font-weight: 700;
+  color: black;
+}
+.second-sec-row {
+  /* background-color: firebrick;
+  margin: 0 auto; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;  /* Adds spacing between the cards */
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px grey;
+  text-align: center;
+  transition: transform 0.3s;
+  height: 350px; /* Consistent height */
+  max-width: 100%; 
+}
+.cards:hover {
+  transform: scale(1.05);  /* Adds a hover effect */
+}
+.image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #C1F1C6;
+  margin-bottom: 1rem; /* Add spacing below image */
+}
+.cards img {
+  max-width: 100%;
+  height: auto;
+}
+.cards p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+@media (max-width: 992px) {
+  .cards {
+    /* On medium screens, 2 cards per row */
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media (max-width: 768px) {
+  .cards {
+    /* On smaller screens, 1 card per row */
+    flex: 1 1 calc(100% - 20px);
+  }
+}
+
+/* Third Section Styling */
+
+.third-sec-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2rem 0;
+}
+.thirdSec-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.left-img-div {
+  width: 100%;
+  max-width: 400px; /* Limiting max width for large screens */
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.left-img-div img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* General Layout Styling */
+.third-sec-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.thirdSec-left,
+.thirdSec-right {
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.left-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #53EC62;
+  border-radius: 15px;
+  border-top-left-radius: 25rem;
+  border-top-right-radius: 25rem;
+  border-bottom-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.left-img-div img {
+  width: 100%; /* Make the image responsive */
+  max-width: 400px; /* Max width to avoid very large images */
+  /* height: auto; */
+  border-radius: 10px;
+  object-fit: cover;
+}
+.thirdSec-right {
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.thirdSec-right h4 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #FF6868;
+  margin-bottom: 1rem;
+}
+.thirdSec-right h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+.thirdSec-right p {
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 768px) {
+  .thirdSec-left,
+  .thirdSec-right {
+    padding: 1rem;
+    width: 100%;
+  }
+  .thirdSec-right h1 {
+    font-size: 2rem; /* Adjust font size */
+  }
+  .thirdSec-right p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+  .left-img-div img {
+    max-width: 100%; /* Image should fill available space */
+  }
+}
+
+/* On medium screens (tablet), adjust layout */
+@media (max-width: 992px) {
+  .thirdSec-left,
+  .thirdSec-right {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  .thirdSec-right h1 {
+    font-size: 2.3rem; /* Slightly smaller heading */
+  }
+  .thirdSec-right p {
+    font-size: 1.2rem; /* Adjust font size */
+  }
+}
+
+/* Footer Styling */
+
+.footer-row {
+  padding: 2rem;
+}
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 6vw;
+}
+.icons div {
+  min-height: 3vw;
+  min-width: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #39DB4A;
+}
+.footer-row p {
+  font-size: 1.2rem;
+  margin-top: 2vw;
+  letter-spacing: 0.1rem;
+  color: #555555;
+}
+.cols p {
+  font-size: 1.1rem;
+  line-height: 0.2rem;
+  color: #555555;
+}
+@media (max-width: 768px) {
+  .footer-row {
+    padding: 1rem;
+  }
+  .footer-row .cols {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .icons {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .footer-row p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .icons div {
+    min-height: 4vw;
+    min-width: 4vw;
+  }
+}
+/* Small devices */
+@media (max-width: 576px) {
+  .footer {
+    padding: 2rem 0;
+  }
+  .footer-row {
+    padding: 1rem;
+  }
+  .footer-row p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  .icons div {
+    min-height: 5vw;
+    min-width: 5vw;
+  }
+  .cols p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
